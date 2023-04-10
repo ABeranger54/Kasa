@@ -1,0 +1,20 @@
+main{
+    text-align: center;
+    color: #FF6060;
+}
+
+main h1{
+    font-size: 200px;
+    line-height: 50px;
+    margin-top: 250px;
+}
+
+main h2{
+    font-size: 35px;
+    margin-bottom: 150px;
+}
+
+main a{
+    color: #FF6060;
+    font-size: 20px;
+}

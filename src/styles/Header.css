@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+header img{
+    width: 211px;
+    height: 68px;
+}
+
+#navBar ul{
+    display: flex;
+    list-style: none;
+    font-size: 24px;
+}
+
+#navBar li{
+    width: 150px;
+}
+
+#navBar a{
+    color: #FF6060;
+    text-decoration: none;
+}

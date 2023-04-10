@@ -1,0 +1,7 @@
+#locations{
+    background-color: #f6f6f6;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

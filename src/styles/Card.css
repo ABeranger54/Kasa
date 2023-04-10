@@ -1,0 +1,16 @@
+.card{
+    background-color: #FF6060;
+    width: 22%;
+    height: 300px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(180deg, rgba(255, 96, 96, 100) 30%, rgba(0, 0, 0, 1) 160%);
+    margin-bottom: 40px;
+}
+
+.card h2{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 240px;
+    color: white;
+}
