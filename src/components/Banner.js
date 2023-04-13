@@ -1,11 +1,10 @@
 import '../styles/Banner.css';
-import banner from "../medias/bannerHome.png"
 
-function Banner(){
+function Banner(props){
     return (
-    <div id="banner">
-        <img src={banner} id="banner" alt="Chez vous, partout et ailleurs" />
-        <h1>Chez vous, partout et ailleurs </h1>
+      <div id="banner">
+        <img src={props.image} id="banner" alt="Chez vous, partout et ailleurs" />
+        <h1>{props.label}</h1>
       </div>
     );
 }

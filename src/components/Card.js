@@ -1,9 +1,9 @@
 import '../styles/Card.css';
 
-function Card(){
+function Card(props){
     return (
-        <div class="card">
-            <h2>Titre de la location</h2>
+        <div className="card">
+            <h2>{props.title}</h2>
         </div>
     );
 }

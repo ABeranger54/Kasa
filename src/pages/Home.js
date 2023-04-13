@@ -1,20 +1,18 @@
 import '../styles/Home.css';
 import Banner from "../components/Banner"
 import Card from "../components/Card"
+import banner from "../medias/bannerHome.png"
+import annonces from "../data/annonces.json"
 
 function App() {
+
+  const cards = annonces.map((card) => <Card title={card.title} />);
+
   return (
     <main>
-      <Banner />
+      <Banner image={banner} label="Chez vous, partout et ailleurs" />
       <div id="locations">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {cards}
       </div>
     </main>
   );

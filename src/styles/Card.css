@@ -1,16 +1,29 @@
 .card{
     background-color: #FF6060;
-    width: 22%;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 10px;
     padding: 10px 20px;
     background: linear-gradient(180deg, rgba(255, 96, 96, 100) 30%, rgba(0, 0, 0, 1) 160%);
-    margin-bottom: 40px;
+    margin: 20px 10px 20px 10px;
 }
 
 .card h2{
     font-size: 20px;
     font-weight: normal;
-    margin-top: 240px;
+    margin-top: 180px;
     color: white;
+    text-align: left;
 }
+
+@media only screen and (max-width: 768px) {
+    .card {
+        background-color: transparent;
+        padding: 0;
+        width: 97%;
+    }
+
+    .card h2{
+        margin-left: 20px;
+    }
+  }

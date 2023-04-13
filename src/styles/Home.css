@@ -4,4 +4,13 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    border-radius: 25px;
 }
+
+@media only screen and (max-width: 768px) {
+    #locations {
+        background-color: transparent;
+        padding: 0;
+        flex-direction: column;
+    }
+  }

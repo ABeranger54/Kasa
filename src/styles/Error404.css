@@ -1,20 +1,21 @@
-main{
+#error404{
     text-align: center;
     color: #FF6060;
+    margin: 0 5%;
 }
 
-main h1{
+#error404 h1{
     font-size: 200px;
     line-height: 50px;
-    margin-top: 250px;
+    margin-top: 229px;
 }
 
-main h2{
+#error404 h2{
     font-size: 35px;
     margin-bottom: 150px;
 }
 
-main a{
+#error404 a{
     color: #FF6060;
     font-size: 20px;
 }

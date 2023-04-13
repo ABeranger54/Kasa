@@ -1,0 +1,33 @@
+.dropdown{
+    margin-bottom: 25px;
+}
+
+.dropdownHead{
+    display: flex;
+    background-color: #FF6060;
+    border-radius: 5px;
+}
+
+.dropdownHead h2{
+    margin: 0;
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.dropdownHead img{
+    
+    width: 20px;
+    height: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+.dropdown p{
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 30px 10px 15px 10px;
+    color: #FF6060;
+    font-size: 18px;
+}

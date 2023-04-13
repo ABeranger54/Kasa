@@ -1,5 +1,21 @@
 body {
   box-sizing: border-box;
-  margin: 30px 15%;
   font-family: "MontSerrat";
+  margin: 0;
+}
+
+main{
+  margin: 30px 15%;
+}
+
+@media only screen and (max-width: 1600px) {
+  main {
+      margin: 30px 10%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  main {
+      margin: 30px 5%;
+  }
 }

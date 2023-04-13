@@ -2,6 +2,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    margin: 30px 15%;
 }
 
 header img{
@@ -13,6 +14,7 @@ header img{
     display: flex;
     list-style: none;
     font-size: 24px;
+    text-align: right;
 }
 
 #navBar li{
@@ -22,4 +24,23 @@ header img{
 #navBar a{
     color: #FF6060;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    header{
+        margin: 30px 10%;
+    }
+
+    #navBar ul{
+        font-size: 20px;
+    }
+
+    #navBar li{
+        width: 110px;
+    }
+
+    header img{
+        width: 173px;
+        height: 55px;
+    }
 }

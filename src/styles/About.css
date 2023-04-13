@@ -1,0 +1,11 @@
+#informations {
+    margin: auto 10%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #informations {
+        margin: auto 0;
+    }
+    
+}
