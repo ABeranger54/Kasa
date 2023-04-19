@@ -4,23 +4,19 @@ import arrowDown from '../medias/arrowDown.png'
 import { useState } from 'react'
 
 function Dropdown(props){
-    const [isOpen, updateOpen] = useState(true);
+    const [isOpen, updateOpen] = useState(false);
     const arrow = (isOpen ? arrowUp : arrowDown);
     const alt = (isOpen ? "Fermer" : "Ouvrir");
 
     return (
         <div className="dropdown">
-            <div className="dropdownHead">
+            <div className="dropdownHead" onClick={()=> updateOpen(!isOpen)}>
                 <h2>{props.title}</h2>
-                <img src={arrow} alt={alt} onClick={()=> onDropDownStateChanged(isOpen, updateOpen)}/>
+                <img src={arrow} alt={alt} />
             </div>
             {isOpen && <p>{props.description}</p>}
         </div>
     );
-}
-
-function onDropDownStateChanged(isOpen, updateFunc){
-    updateFunc(!isOpen);
 }
 
 export default Dropdown;

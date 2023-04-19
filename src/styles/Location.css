@@ -1,0 +1,49 @@
+#locationIntroduction{
+    display: flex;
+    justify-content: space-between;
+    color: #FF6060;
+}
+
+h1{
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+h2{
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 16px;;
+}
+
+#tags{
+    display: flex;
+    align-items: center;
+}
+
+#tags p{
+    margin: 0 5px;
+    background-color: #FF6060;
+    color: white;
+    padding: 3px 7px;
+    width: 120px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#host{
+    display: flex;
+    align-items: center;
+}
+
+#host img{
+    margin-left: 15px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+#host p{
+    text-align: right;
+    width: 100px;
+}

@@ -4,9 +4,9 @@ import Card from "../components/Card"
 import banner from "../medias/bannerHome.png"
 import annonces from "../data/annonces.json"
 
-function App() {
+function Home() {
 
-  const cards = annonces.map((card) => <Card title={card.title} />);
+  const cards = annonces.map((card) => <Card id={card.id} title={card.title} />);
 
   return (
     <main>
@@ -18,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

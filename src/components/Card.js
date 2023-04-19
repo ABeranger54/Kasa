@@ -1,10 +1,13 @@
 import '../styles/Card.css';
+import { Link } from 'react-router-dom';
 
 function Card(props){
     return (
-        <div className="card">
-            <h2>{props.title}</h2>
-        </div>
+        <Link to={"/location/" + props.id}>
+            <div className="card">
+                <h2>{props.title}</h2>
+            </div>
+        </Link>
     );
 }
 
