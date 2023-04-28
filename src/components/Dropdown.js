@@ -7,6 +7,15 @@ function Dropdown(props){
     const [isOpen, updateOpen] = useState(false);
     const arrow = (isOpen ? arrowUp : arrowDown);
     const alt = (isOpen ? "Fermer" : "Ouvrir");
+    const content = [];
+    if(Array.isArray(props.description)){
+        props.description.forEach(e => {
+            content.push(e);
+            content.push(<br/>);
+        });
+    }else{
+        content.push(props.description);
+    }
 
     return (
         <div className="dropdown">
@@ -14,7 +23,7 @@ function Dropdown(props){
                 <h2>{props.title}</h2>
                 <img src={arrow} alt={alt} />
             </div>
-            {isOpen && <p>{props.description}</p>}
+            {isOpen && <p>{content}</p>}
         </div>
     );
 }

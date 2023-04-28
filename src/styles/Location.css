@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     color: #FF6060;
+    margin-bottom: 20px;
 }
 
 h1{
@@ -33,6 +34,8 @@ h2{
 }
 
 #host{
+    margin-top: 15px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
@@ -46,4 +49,34 @@ h2{
 #host p{
     text-align: right;
     width: 100px;
+}
+
+
+#locationDropndowns{
+    display: flex;
+    gap: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    #locationIntroduction {
+        display: block;
+    }
+
+    #locationIntroRight{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #locationDropndowns{
+        display: block;
+    }
+
+    #host{
+        margin-bottom: 0;
+    }
+
+    #rating{
+        margin-top: 30px;
+    }
 }

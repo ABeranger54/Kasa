@@ -1,7 +1,9 @@
 import { useParams } from 'react-router-dom';
-import '../styles/Location.css';
 import Gallery from '../components/Gallery';
 import annonces from "../data/annonces.json"
+import Rating from '../components/Rating';
+import DropDown from '../components/Dropdown'
+import '../styles/Location.css';
 
 function Location(){
 
@@ -20,13 +22,17 @@ function Location(){
                         {tags}
                     </div>
                 </div>
-                <div>
+                <div id="locationIntroRight">
                     <div id="host">
                         <p>{location.host.name}</p>
                         <img src={location.host.picture} alt={location.host.name} />
                     </div>
-                    <div>NOTATION</div>
+                    <Rating value={location.rating}/>
                 </div>
+            </div>
+            <div id="locationDropndowns">
+                <DropDown title="Description" description={location.description} />
+                <DropDown title="Équipements" description={ location.equipments } />
             </div>
         </main>
     )
