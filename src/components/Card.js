@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 function Card(props){
     return (
-        <Link to={"/location/" + props.id}>
-            <div className="card">
+        <div className="card">
+            <Link to={"/location/" + props.id}>
                 <h2>{props.title}</h2>
-            </div>
-        </Link>
+            </Link>
+        </div>
     );
 }
 

@@ -8,11 +8,11 @@ function Rating(props){
     var alt = "Note: " + props.value + "/5";
     const render = [];
     while(count < props.value){
-        render[count] = <img src={starFull} alt={alt} />;
+        render[count] = <img key={count} src={starFull} alt={alt} />;
         count++;
     }
     for(let i = count; i < 5; i++){
-        render[i] = <img src={starEmpty} alt={alt} />;
+        render[i] = <img key={i} src={starEmpty} alt={alt} />;
     }
 
 

@@ -11,7 +11,8 @@
 .card h2{
     font-size: 20px;
     font-weight: normal;
-    margin-top: 180px;
+    padding-top: 180px;
+    padding-bottom: 44px;
     color: white;
     text-align: left;
 }
@@ -21,9 +22,11 @@
         background-color: transparent;
         padding: 0;
         width: 97%;
+        margin: 10px;
     }
 
-    .card h2{
+    .card a h2{
         margin-left: 20px;
+        display: block;
     }
   }

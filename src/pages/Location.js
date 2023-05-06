@@ -19,7 +19,7 @@ function Location(){
      });
 
      if(location){
-        const tags = location.tags.map((tag) => <p>{tag}</p>);
+        const tags = location.tags.map((tag, i) => <p key={i}>{tag}</p>);
 
         return (
             <main>

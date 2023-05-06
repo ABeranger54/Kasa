@@ -6,7 +6,7 @@ import annonces from "../data/annonces.json"
 
 function Home() {
 
-  const cards = annonces.map((card) => <Card id={card.id} title={card.title} />);
+  const cards = annonces.map((card) => <Card key={card.id} id={card.id} title={card.title} />);
 
   return (
     <main>

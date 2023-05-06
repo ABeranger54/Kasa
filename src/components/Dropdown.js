@@ -9,9 +9,9 @@ function Dropdown(props){
     const alt = (isOpen ? "Fermer" : "Ouvrir");
     const content = [];
     if(Array.isArray(props.description)){
-        props.description.forEach(e => {
+        props.description.forEach((e, i) => {
             content.push(e);
-            content.push(<br/>);
+            content.push(<br key={i}/>);
         });
     }else{
         content.push(props.description);
