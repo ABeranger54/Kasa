@@ -19,6 +19,7 @@ header img{
 
 #navBar li{
     width: 150px;
+    text-decoration-color: #FF6060 !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -37,5 +38,9 @@ header img{
     header img{
         width: 173px;
         height: 55px;
+    }
+
+    .underline{
+        text-decoration: underline;
     }
 }
