@@ -47,7 +47,6 @@ function Location(){
             </main>
         )
      }
-    
 }
 
 export default Location;
